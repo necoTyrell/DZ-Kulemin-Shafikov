@@ -3,7 +3,7 @@ pipeline {
     agent any
     
     environment {
-        DOCKER_IMAGE = 'your-dockerhub-username/countries-capitals-app'
+        DOCKER_IMAGE = 'necotyrell/countries-capitals-app'
         DOCKER_CREDENTIALS_ID = 'docker-hub-credentials'
     }
     
@@ -73,4 +73,5 @@ pipeline {
             echo '❌ Сборка или тестирование завершились ошибкой!'
         }
     }
+
 }
